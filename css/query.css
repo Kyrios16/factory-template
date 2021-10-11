@@ -143,7 +143,12 @@
     padding: 8.464vw 0 7.2vw;
   }
 
-  .product .sec-ttl {
+  /* .product .sec-ttl {
+    font-size: 1.823vw;
+    margin-bottom: 2.604vw;
+  } */
+
+  .sec-ttl {
     font-size: 1.823vw;
     margin-bottom: 2.604vw;
   }
@@ -769,8 +774,11 @@
     margin-bottom: 3.125vw
   }
 
-  .product .sec-ttl,
+  /* .product .sec-ttl,
   .service .sec-ttl {
+    font-size: 2.5vw;
+  } */
+.sec-ttl {
     font-size: 2.5vw;
   }
 

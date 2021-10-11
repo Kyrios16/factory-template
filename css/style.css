@@ -352,7 +352,6 @@
 .form-box {
   width: 50%;
   height: auto;
-  box-shadow: 2px 0px 6px #000000;
   padding-bottom: 60px;
 }
 
@@ -369,6 +368,7 @@
 }
 
 ::placeholder {
+  font-family: 'Roboto';
   color: #AAAAAA;
 }
 

@@ -11,6 +11,34 @@ $(document).ready(function (){
       offset: "50px",
     }
   );
+
+  //post showcase 
+  $('.post-showcase li:lt(1)').show();
+    $('.less').hide();
+    let items =  3;
+    let shown =  1;
+    $('.more').click(function () {
+        $('.less').show();
+        shown = $('.post-showcase li:visible').length;
+        ++shown;
+        if(shown < items) {
+          $('.post-showcase li:lt('+shown+')').show(300);
+        } else {
+          $('.post-showcase li:lt('+items+')').show(300);
+          $('.more').hide();
+        }
+    });
+    $('.less').click(function () {
+      
+       if(shown > 1) {
+          $('.post-showcase li:visible:gt(-2)').hide(300);
+          $('.more').show();
+         shown--;
+         console.log(shown);
+       } else {
+         $('.less').hide();
+       }
+    });
   //navigation for smartphone 
   $('.menu-trigger').click(function(){
     $(this).toggleClass('active');

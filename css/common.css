@@ -203,6 +203,25 @@ body {
 
 /* reusable components */
 
+  .post-showcase {
+    margin: 0;
+    padding: 0;
+  }
+
+  .post-showcase li { 
+    display: none;
+  }
+
+  .sec-btn-gp {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .sec-btn-gp .btn {
+    padding: 10px 5px;
+    border-radius: 30px;
+  }
+
 .totop-btn {
   position: fixed;
   background-color: #FF9800;
