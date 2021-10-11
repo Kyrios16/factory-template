@@ -85,3 +85,14 @@ $(document).ready(function (){
     $('html, body').animate({scrollTop:0}, '300');
   });
 });
+
+$(document).ready(function () {
+  if (window.matchMedia('(min-width:641px)').matches) {
+      $(".plan-box .sec-para").heightLine({
+          fontSizeCheck: true
+      });
+  } else {
+      $(".plan-box .sec-para").heightLine("destroy");
+  } 
+
+});
